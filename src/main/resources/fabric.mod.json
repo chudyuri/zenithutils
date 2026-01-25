@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "zenithutils",
+	"version": "${version}",
+	"name": "Zenithutils",
+	"description": "makes vesp tp red",
+	"authors": [
+		"yuri"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/zenithutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"zenith.utils.Zenithutils"
+		],
+		"client": [
+			"zenith.utils.ZenithutilsClient"
+		]
+	},
+	"mixins": [
+		"zenithutils.mixins.json",
+		{
+			"config": "zenithutils.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
