@@ -19,7 +19,6 @@ public class ZenithutilsClient implements ClientModInitializer {
 
                 MinecraftClient mc = MinecraftClient.getInstance();
                 if (mc.player != null) {
-                    // Sends a client‑only message to chat
                     mc.player.sendMessage(Text.literal("You are now on the Zenith Shard!"), false);
                 }
             } else if (!zenith) {
