@@ -24,7 +24,7 @@ public abstract class ExampleClientMixin {
 
         if (!world.getRegistryKey().getValue().getPath().equals("zenith")) return;
 
-        // CAST 'this' to the target particle class
+
         ((AbstractDustParticle<?>) (Object) this).setColor(1f, 0f, 0f);
     }
 }
